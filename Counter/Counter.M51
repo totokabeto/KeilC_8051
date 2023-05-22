@@ -1,0 +1,220 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/10/2023  11:17:58  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO Counter RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SLDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?ULDIV)
+
+
+LINK MAP OF MODULE:  Counter (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0004H     UNIT         _DATA_GROUP_
+            IDATA   000CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0173H     UNIT         ?PR?MAIN?MAIN
+            CODE    0973H     0123H     UNIT         ?C?LIB_CODE
+            CODE    0A96H     0044H     UNIT         ?C?LDIV
+            CODE    0ADAH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0AE6H     000AH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   Counter (MAIN)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  0008H    0004H
+  +--> ?CO?MAIN
+
+
+
+UNRESOLVED EXTERNAL SYMBOLS:
+   LCD_INIT
+   _LCD_CHR
+   _LCD_CHR_CP
+   _LCD_OUT
+
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/10/2023  11:17:58  PAGE 2
+
+
+
+SYMBOL TABLE OF MODULE:  Counter (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00B0H.2       PUBLIC        INT0
+  C:0800H         PUBLIC        main
+  D:0089H         PUBLIC        TMOD
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        t
+  D:000AH         SYMBOL        f
+  -------         ENDDO         
+  C:0800H         LINE#         4
+  C:0800H         LINE#         6
+  C:0803H         LINE#         7
+  C:0810H         LINE#         8
+  C:081DH         LINE#         9
+  C:0820H         LINE#         10
+  C:0823H         LINE#         12
+  C:0823H         LINE#         14
+  C:0826H         LINE#         15
+  C:0828H         LINE#         16
+  C:082BH         LINE#         17
+  C:082EH         LINE#         18
+  C:0830H         LINE#         20
+  C:0833H         LINE#         21
+  C:0835H         LINE#         22
+  C:083CH         LINE#         23
+  C:0843H         LINE#         24
+  C:0848H         LINE#         25
+  C:085EH         LINE#         26
+  C:087DH         LINE#         27
+  C:089CH         LINE#         28
+  C:08BBH         LINE#         29
+  C:08CDH         LINE#         30
+  C:08EFH         LINE#         31
+  C:0901H         LINE#         32
+  C:0920H         LINE#         33
+  C:093FH         LINE#         34
+  C:095EH         LINE#         35
+  C:0970H         LINE#         37
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?UIDIV
+  C:0973H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+  -------         MODULE        ?C?SLDIV
+  C:0A96H         PUBLIC        ?C?SLDIV
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/10/2023  11:17:58  PAGE 3
+
+
+  -------         ENDMOD        ?C?SLDIV
+
+  -------         MODULE        ?C?ULDIV
+  C:0A04H         PUBLIC        ?C?ULDIV
+  -------         ENDMOD        ?C?ULDIV
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  LCD_INIT
+    MODULE:  main.obj (MAIN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_CHR
+    MODULE:  main.obj (MAIN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_OUT
+    MODULE:  main.obj (MAIN)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  LCD_INIT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0801H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_OUT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 080EH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_OUT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 081BH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 085CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 087BH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 089AH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 08B9H
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/10/2023  11:17:58  PAGE 4
+
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 08CBH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 08FFH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 091EH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 093DH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 095CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_CHR_CP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 096EH
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 017DH BYTE (18%) *
+******************************************************************************
+
+Program Size: data=13.0 xdata=0 code=755
+LINK/LOCATE RUN COMPLETE.  17 WARNING(S),  0 ERROR(S)

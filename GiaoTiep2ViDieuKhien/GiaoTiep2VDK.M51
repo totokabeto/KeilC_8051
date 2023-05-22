@@ -1,0 +1,200 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/09/2023  23:59:46  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\UartMode1.obj, .\delay.obj TO GiaoTiep2VDK RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  .\UartMode1.obj (UARTMODE1)
+  .\delay.obj (DELAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+
+
+LINK MAP OF MODULE:  GiaoTiep2VDK (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0003H     UNIT         ?DT?_UART_WRITE_TEXT?UARTMODE1
+            IDATA   000BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     002DH     UNIT         ?C?LIB_CODE
+            CODE    082DH     0029H     UNIT         ?PR?MAIN?MAIN
+            CODE    0856H     0020H     UNIT         ?PR?_UART_WRITE_TEXT?UARTMODE1
+            CODE    0876H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0896H     0014H     UNIT         ?PR?UART_INIT?UARTMODE1
+            CODE    08AAH     000CH     UNIT         ?C_C51STARTUP
+            CODE    08B6H     0008H     UNIT         ?PR?_UART_WRITE?UARTMODE1
+            CODE    08BEH     0006H     UNIT         ?PR?UART_DATA_READY?UARTMODE1
+            CODE    08C4H     0005H     UNIT         ?PR?UART_READ?UARTMODE1
+
+
+
+OVERLAY MAP OF MODULE:   GiaoTiep2VDK (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?UART_INIT?UARTMODE1
+  +--> ?PR?_DELAY_MS?DELAY
+  +--> ?PR?_UART_WRITE?UARTMODE1
+
+
+
+SYMBOL TABLE OF MODULE:  GiaoTiep2VDK (MAIN)
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/09/2023  23:59:46  PAGE 2
+
+
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0090H.0       PUBLIC        P1_0
+  B:0090H.1       PUBLIC        P1_1
+  C:082DH         PUBLIC        main
+  -------         PROC          MAIN
+  C:082DH         LINE#         4
+  C:082DH         LINE#         5
+  C:0830H         LINE#         6
+  C:0830H         LINE#         7
+  C:0833H         LINE#         8
+  C:083AH         LINE#         9
+  C:083FH         LINE#         10
+  C:0842H         LINE#         11
+  C:0842H         LINE#         12
+  C:0845H         LINE#         13
+  C:084CH         LINE#         14
+  C:0851H         LINE#         15
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        UARTMODE1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:08B6H         PUBLIC        _Uart_Write
+  C:0856H         PUBLIC        _Uart_Write_Text
+  C:0896H         PUBLIC        Uart_Init
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  D:0099H         PUBLIC        SBUF
+  D:0089H         PUBLIC        TMOD
+  D:008DH         PUBLIC        TH1
+  B:0098H.7       PUBLIC        SM0
+  B:0098H.6       PUBLIC        SM1
+  C:08BEH         PUBLIC        Uart_Data_Ready
+  B:0088H.6       PUBLIC        TR1
+  B:0098H.4       PUBLIC        REN
+  C:08C4H         PUBLIC        Uart_Read
+  -------         PROC          UART_INIT
+  C:0896H         LINE#         8
+  C:0896H         LINE#         9
+  C:0896H         LINE#         10
+  C:089AH         LINE#         12
+  C:089DH         LINE#         13
+  C:08A0H         LINE#         16
+  C:08A3H         LINE#         28
+  C:08A5H         LINE#         29
+  C:08A7H         LINE#         30
+  C:08A9H         LINE#         31
+  -------         ENDPROC       UART_INIT
+  -------         PROC          _UART_WRITE
+  D:0007H         SYMBOL        c
+  C:08B6H         LINE#         33
+  C:08B6H         LINE#         34
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/09/2023  23:59:46  PAGE 3
+
+
+  C:08B6H         LINE#         35
+  C:08B9H         LINE#         36
+  C:08BBH         LINE#         37
+  C:08BDH         LINE#         38
+  -------         ENDPROC       _UART_WRITE
+  -------         PROC          _UART_WRITE_TEXT
+  D:0008H         SYMBOL        str
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0856H         LINE#         40
+  C:085CH         LINE#         41
+  C:085CH         LINE#         42
+  C:085EH         LINE#         43
+  C:086FH         LINE#         44
+  C:086FH         LINE#         45
+  C:0872H         LINE#         46
+  C:0873H         LINE#         47
+  C:0875H         LINE#         48
+  -------         ENDPROC       _UART_WRITE_TEXT
+  -------         PROC          UART_DATA_READY
+  C:08BEH         LINE#         50
+  C:08BEH         LINE#         51
+  C:08BEH         LINE#         52
+  C:08C3H         LINE#         53
+  -------         ENDPROC       UART_DATA_READY
+  -------         PROC          UART_READ
+  C:08C4H         LINE#         55
+  C:08C4H         LINE#         56
+  C:08C4H         LINE#         57
+  C:08C6H         LINE#         58
+  C:08C8H         LINE#         59
+  -------         ENDPROC       UART_READ
+  -------         ENDMOD        UARTMODE1
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0876H         PUBLIC        _Delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:0876H         LINE#         14
+  C:0876H         LINE#         15
+  C:0876H         LINE#         17
+  C:0880H         LINE#         18
+  C:0880H         LINE#         19
+  C:088EH         LINE#         20
+  C:0895H         LINE#         21
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0800H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/09/2023  23:59:46  PAGE 4
+
+
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?UARTMODE1
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0090H BYTE ( 7%) *
+******************************************************************************
+
+Program Size: data=12.0 xdata=0 code=204
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)

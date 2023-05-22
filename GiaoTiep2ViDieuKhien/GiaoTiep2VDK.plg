@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\KHANH\KeilC 8051 TUT\GiaoTiep2ViDieuKhien\GiaoTiep2VDK.uvproj
+Project File Date:  04/09/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+Program Size: data=12.0 xdata=0 code=204
+creating hex file from "GiaoTiep2VDK"...
+"GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+Program Size: data=12.0 xdata=0 code=204
+creating hex file from "GiaoTiep2VDK"...
+"GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).

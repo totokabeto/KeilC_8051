@@ -1,0 +1,4 @@
+"main.obj",
+".\UartMode1.obj" 
+TO "GiaoTiepVDK2" 
+RAMSIZE(256) 

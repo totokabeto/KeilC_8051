@@ -1,0 +1,61 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/10/2023 11:15:04 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h" 
+   2          #include "..\lib\delay.h"
+   3          #include "..\lib\LCD4.h"
+   4          void main() {
+   5   1        unsigned int t,f; 
+   6   1        Lcd_Init(); 
+   7   1        Lcd_Out(1,1,"T = "); 
+   8   1        Lcd_Out(2,1,"f = "); 
+   9   1        TMOD  &= 0xF0; 
+  10   1        TMOD |= 0x09; // gATE = 1, MO = 1; 
+  11   1        
+  12   1      while (1){
+  13   2        
+  14   2        TH0 = 0; 
+  15   2        TL0 = 0;
+  16   2        while(INT0);// bo qua muc 1 dau tien 
+  17   2        while(!INT0); // bo qua muc 0
+  18   2        TR0 = 1; 
+  19   2        
+  20   2      while (INT0);
+  21   2        TR0 = 0; 
+  22   2        t = TH0;
+  23   2        t <<= 8; 
+  24   2        t |= TL0; 
+  25   2        Lcd_Chr(1,5,t/10000+0x30);
+  26   2        Lcd_Chr_Cp(t%10000/1000+0x30);
+  27   2          Lcd_Chr_Cp(t%10000/100+0x30);
+  28   2          Lcd_Chr_Cp(t%10000/10+0x30);
+  29   2        Lcd_Chr_Cp(t%10+0x30);
+  30   2        f = 1000000/t/2; 
+  31   2        Lcd_Chr(2,5,f/10000+0x30);
+  32   2        Lcd_Chr_Cp(f%10000/1000+0x30);
+  33   2          Lcd_Chr_Cp(f%10000/100+0x30);
+  34   2          Lcd_Chr_Cp(f%10000/10+0x30);
+  35   2        Lcd_Chr_Cp(f%10+0x30);
+  36   2        
+  37   2        }
+  38   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    371    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

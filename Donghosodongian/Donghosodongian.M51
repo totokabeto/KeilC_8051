@@ -1,0 +1,155 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/27/2023  23:49:15  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\delay.obj TO Donghosodongian RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  .\delay.obj (DELAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  Donghosodongian (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0006H     UNIT         _DATA_GROUP_
+            IDATA   000EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00E5H     UNIT         ?PR?MAIN?MAIN
+            CODE    08E5H     0020H     UNIT         ?PR?_DELAY?DELAY
+            CODE    0905H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0911H     000AH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   Donghosodongian (MAIN)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  0008H    0006H
+  +--> ?CO?MAIN
+  +--> ?PR?_DELAY?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  Donghosodongian (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/27/2023  23:49:15  PAGE 2
+
+
+  B:00B0H.0       PUBLIC        LEDG1_PIN
+  B:00B0H.1       PUBLIC        LEDG2_PIN
+  B:00B0H.2       PUBLIC        LEDP1_PIN
+  B:00B0H.3       PUBLIC        LEDP2_PIN
+  C:0800H         PUBLIC        main
+  C:0911H         PUBLIC        Code7Seg
+  B:00B0H.4       PUBLIC        LEDGY1_PIN
+  B:00B0H.5       PUBLIC        LEDGY2_PIN
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        gio
+  D:0009H         SYMBOL        phut
+  D:000AH         SYMBOL        giay
+  D:000BH         SYMBOL        chuc
+  D:000CH         SYMBOL        dvi
+  D:000DH         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         13
+  C:0800H         LINE#         17
+  C:0807H         LINE#         19
+  C:0807H         LINE#         21
+  C:080AH         LINE#         22
+  C:0812H         LINE#         23
+  C:081BH         LINE#         24
+  C:0823H         LINE#         25
+  C:0825H         LINE#         26
+  C:082CH         LINE#         27
+  C:082EH         LINE#         29
+  C:0836H         LINE#         30
+  C:0838H         LINE#         31
+  C:083FH         LINE#         32
+  C:0841H         LINE#         35
+  C:0849H         LINE#         36
+  C:0852H         LINE#         37
+  C:085AH         LINE#         38
+  C:085CH         LINE#         39
+  C:0863H         LINE#         40
+  C:0865H         LINE#         42
+  C:086DH         LINE#         43
+  C:086FH         LINE#         44
+  C:0876H         LINE#         45
+  C:0878H         LINE#         48
+  C:0880H         LINE#         49
+  C:0889H         LINE#         50
+  C:0891H         LINE#         51
+  C:0893H         LINE#         52
+  C:089AH         LINE#         53
+  C:089CH         LINE#         56
+  C:08A4H         LINE#         57
+  C:08A6H         LINE#         58
+  C:08ADH         LINE#         59
+  C:08BBH         LINE#         61
+  C:08BDH         LINE#         62
+  C:08C6H         LINE#         63
+  C:08C8H         LINE#         64
+  C:08CAH         LINE#         65
+  C:08D3H         LINE#         66
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/27/2023  23:49:15  PAGE 3
+
+
+  C:08D5H         LINE#         67
+  C:08D7H         LINE#         68
+  C:08E0H         LINE#         69
+  C:08E2H         LINE#         70
+  C:08E2H         LINE#         71
+  C:08E2H         LINE#         72
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:08E5H         PUBLIC        _delay
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:08E5H         LINE#         4
+  C:08E5H         LINE#         6
+  C:08EFH         LINE#         7
+  C:0904H         LINE#         8
+  -------         ENDPROC       _DELAY
+  -------         ENDMOD        DELAY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 010FH BYTE (13%) *
+******************************************************************************
+
+Program Size: data=15.0 xdata=0 code=286
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

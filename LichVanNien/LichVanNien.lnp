@@ -1,0 +1,8 @@
+"main.obj",
+".\LCD4.obj",
+".\Rtc_Ds1307.obj",
+".\Soft_I2C.obj",
+".\LunarCalendar.obj",
+".\delay.obj" 
+TO "LichVanNien" 
+RAMSIZE(256) 

@@ -1,0 +1,83 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/10/2023  01:38:02  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO TaoSoNgauNhien RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  TaoSoNgauNhien (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0017H     UNIT         ?PR?MAIN?MAIN
+            CODE    0817H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0823H     000AH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   TaoSoNgauNhien (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?CO?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  TaoSoNgauNhien (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:0800H         PUBLIC        main
+  C:0823H         PUBLIC        Code7Seg
+  B:0090H.0       PUBLIC        BTN
+  -------         PROC          MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/10/2023  01:38:02  PAGE 2
+
+
+  -------         DO            
+  D:0007H         SYMBOL        dem
+  -------         ENDDO         
+  C:0800H         LINE#         6
+  C:0800H         LINE#         7
+  C:0802H         LINE#         8
+  C:0802H         LINE#         9
+  C:0805H         LINE#         10
+  C:0808H         LINE#         11
+  C:0815H         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0021H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=48
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

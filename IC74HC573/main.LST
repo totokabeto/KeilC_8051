@@ -1,0 +1,47 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              03/29/2023 23:42:41 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h" 
+   2          #include "..\\lib\delay.h"
+   3          // khai bao ket noi 
+   4            unsigned char code Code7Seg[] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
+   5            sbit LE1 = P2^0; 
+   6            sbit LE2 = P2^1; 
+   7          void main() {
+   8   1        unsigned char i;
+   9   1      LE1 = 0; 
+  10   1      LE2 = 0;  
+  11   1      while (1){
+  12   2      
+  13   2        for (i = 0; i < 100; i++){
+  14   3      P0 = Code7Seg[i/10]; 
+  15   3          LE1 = 1; 
+  16   3          LE1 = 0; 
+  17   3      P0 = Code7Seg[i%10]; 
+  18   3          LE2 = 1; 
+  19   3          LE2 = 0; 
+  20   3          delay(500);
+  21   3      }
+  22   2        
+  23   2        }
+  24   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     56    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,445 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\KHANH\KeilC 8051 TUT\MaTranPhim\MaTranPhim.uvproj
+Project File Date:  03/27/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=17
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?DELAY
+Program Size: data=9.0 xdata=0 code=49
+"MaTranPhim" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(9): error C231: 'COL2': redefinition
+main.c(10): error C231: 'COL2': redefinition
+main.c(35): error C202: 'COL3': undefined identifier
+main.c(40): error C202: 'COL3': undefined identifier
+main.c(42): error C202: 'COL4': undefined identifier
+main.c(47): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=10.0 xdata=0 code=213
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=10.0 xdata=0 code=213
+creating hex file from "MaTranPhim"...
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=10.0 xdata=0 code=213
+creating hex file from "MaTranPhim"...
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=10.0 xdata=0 code=213
+creating hex file from "MaTranPhim"...
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=10.0 xdata=0 code=213
+creating hex file from "MaTranPhim"...
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling KeyPad4x4.c...
+..\lib\KeyPad4x4.c(6): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(8): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(14): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(21): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(28): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(12): error C202: 'COL1': undefined identifier
+main.c(14): error C202: 'ROW1': undefined identifier
+main.c(15): error C202: 'ROW2': undefined identifier
+main.c(16): error C202: 'ROW3': undefined identifier
+main.c(17): error C202: 'ROW4': undefined identifier
+main.c(18): error C202: 'COL1': undefined identifier
+main.c(20): error C202: 'COL2': undefined identifier
+main.c(21): error C202: 'ROW1': undefined identifier
+main.c(22): error C202: 'ROW2': undefined identifier
+main.c(23): error C202: 'ROW3': undefined identifier
+main.c(24): error C202: 'ROW4': undefined identifier
+main.c(25): error C202: 'COL2': undefined identifier
+main.c(27): error C202: 'COL3': undefined identifier
+main.c(28): error C202: 'ROW1': undefined identifier
+main.c(29): error C202: 'ROW2': undefined identifier
+main.c(30): error C202: 'ROW3': undefined identifier
+main.c(31): error C202: 'ROW4': undefined identifier
+main.c(32): error C202: 'COL3': undefined identifier
+main.c(34): error C202: 'COL4': undefined identifier
+main.c(35): error C202: 'ROW1': undefined identifier
+main.c(36): error C202: 'ROW2': undefined identifier
+main.c(37): error C202: 'ROW3': undefined identifier
+main.c(38): error C202: 'ROW4': undefined identifier
+main.c(39): error C202: 'COL4': undefined identifier
+compiling KeyPad4x4.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(12): error C202: 'COL1': undefined identifier
+main.c(14): error C202: 'ROW1': undefined identifier
+main.c(15): error C202: 'ROW2': undefined identifier
+main.c(16): error C202: 'ROW3': undefined identifier
+main.c(17): error C202: 'ROW4': undefined identifier
+main.c(18): error C202: 'COL1': undefined identifier
+main.c(20): error C202: 'COL2': undefined identifier
+main.c(21): error C202: 'ROW1': undefined identifier
+main.c(22): error C202: 'ROW2': undefined identifier
+main.c(23): error C202: 'ROW3': undefined identifier
+main.c(24): error C202: 'ROW4': undefined identifier
+main.c(25): error C202: 'COL2': undefined identifier
+main.c(27): error C202: 'COL3': undefined identifier
+main.c(28): error C202: 'ROW1': undefined identifier
+main.c(29): error C202: 'ROW2': undefined identifier
+main.c(30): error C202: 'ROW3': undefined identifier
+main.c(31): error C202: 'ROW4': undefined identifier
+main.c(32): error C202: 'COL3': undefined identifier
+main.c(34): error C202: 'COL4': undefined identifier
+main.c(35): error C202: 'ROW1': undefined identifier
+main.c(36): error C202: 'ROW2': undefined identifier
+main.c(37): error C202: 'ROW3': undefined identifier
+main.c(38): error C202: 'ROW4': undefined identifier
+main.c(39): error C202: 'COL4': undefined identifier
+compiling KeyPad4x4.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(12): error C202: 'COL1': undefined identifier
+main.c(14): error C202: 'ROW1': undefined identifier
+main.c(15): error C202: 'ROW2': undefined identifier
+main.c(16): error C202: 'ROW3': undefined identifier
+main.c(17): error C202: 'ROW4': undefined identifier
+main.c(18): error C202: 'COL1': undefined identifier
+main.c(20): error C202: 'COL2': undefined identifier
+main.c(21): error C202: 'ROW1': undefined identifier
+main.c(22): error C202: 'ROW2': undefined identifier
+main.c(23): error C202: 'ROW3': undefined identifier
+main.c(24): error C202: 'ROW4': undefined identifier
+main.c(25): error C202: 'COL2': undefined identifier
+main.c(27): error C202: 'COL3': undefined identifier
+main.c(28): error C202: 'ROW1': undefined identifier
+main.c(29): error C202: 'ROW2': undefined identifier
+main.c(30): error C202: 'ROW3': undefined identifier
+main.c(31): error C202: 'ROW4': undefined identifier
+main.c(32): error C202: 'COL3': undefined identifier
+main.c(34): error C202: 'COL4': undefined identifier
+main.c(35): error C202: 'ROW1': undefined identifier
+main.c(36): error C202: 'ROW2': undefined identifier
+main.c(37): error C202: 'ROW3': undefined identifier
+main.c(38): error C202: 'ROW4': undefined identifier
+main.c(39): error C202: 'COL4': undefined identifier
+compiling KeyPad4x4.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(12): error C202: 'COL1': undefined identifier
+main.c(14): error C202: 'ROW1': undefined identifier
+main.c(15): error C202: 'ROW2': undefined identifier
+main.c(16): error C202: 'ROW3': undefined identifier
+main.c(17): error C202: 'ROW4': undefined identifier
+main.c(18): error C202: 'COL1': undefined identifier
+main.c(20): error C202: 'COL2': undefined identifier
+main.c(21): error C202: 'ROW1': undefined identifier
+main.c(22): error C202: 'ROW2': undefined identifier
+main.c(23): error C202: 'ROW3': undefined identifier
+main.c(24): error C202: 'ROW4': undefined identifier
+main.c(25): error C202: 'COL2': undefined identifier
+main.c(27): error C202: 'COL3': undefined identifier
+main.c(28): error C202: 'ROW1': undefined identifier
+main.c(29): error C202: 'ROW2': undefined identifier
+main.c(30): error C202: 'ROW3': undefined identifier
+main.c(31): error C202: 'ROW4': undefined identifier
+main.c(32): error C202: 'COL3': undefined identifier
+main.c(34): error C202: 'COL4': undefined identifier
+main.c(35): error C202: 'ROW1': undefined identifier
+main.c(36): error C202: 'ROW2': undefined identifier
+main.c(37): error C202: 'ROW3': undefined identifier
+main.c(38): error C202: 'ROW4': undefined identifier
+main.c(39): error C202: 'COL4': undefined identifier
+compiling KeyPad4x4.c...
+port.h(4): error C202: 'P1': undefined identifier
+port.h(5): error C202: 'P1': undefined identifier
+port.h(6): error C202: 'P1': undefined identifier
+port.h(7): error C202: 'P1': undefined identifier
+port.h(9): error C202: 'P1': undefined identifier
+port.h(10): error C202: 'P1': undefined identifier
+port.h(11): error C202: 'P1': undefined identifier
+port.h(12): error C202: 'P1': undefined identifier
+..\lib\KeyPad4x4.c(6): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(8): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(14): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(21): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(28): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(13): error C202: 'COL1': undefined identifier
+main.c(15): error C202: 'ROW1': undefined identifier
+main.c(16): error C202: 'ROW2': undefined identifier
+main.c(17): error C202: 'ROW3': undefined identifier
+main.c(18): error C202: 'ROW4': undefined identifier
+main.c(19): error C202: 'COL1': undefined identifier
+main.c(21): error C202: 'COL2': undefined identifier
+main.c(22): error C202: 'ROW1': undefined identifier
+main.c(23): error C202: 'ROW2': undefined identifier
+main.c(24): error C202: 'ROW3': undefined identifier
+main.c(25): error C202: 'ROW4': undefined identifier
+main.c(26): error C202: 'COL2': undefined identifier
+main.c(28): error C202: 'COL3': undefined identifier
+main.c(29): error C202: 'ROW1': undefined identifier
+main.c(30): error C202: 'ROW2': undefined identifier
+main.c(31): error C202: 'ROW3': undefined identifier
+main.c(32): error C202: 'ROW4': undefined identifier
+main.c(33): error C202: 'COL3': undefined identifier
+main.c(35): error C202: 'COL4': undefined identifier
+main.c(36): error C202: 'ROW1': undefined identifier
+main.c(37): error C202: 'ROW2': undefined identifier
+main.c(38): error C202: 'ROW3': undefined identifier
+main.c(39): error C202: 'ROW4': undefined identifier
+main.c(40): error C202: 'COL4': undefined identifier
+compiling KeyPad4x4.c...
+port.h(4): error C202: 'P1': undefined identifier
+port.h(5): error C202: 'P1': undefined identifier
+port.h(6): error C202: 'P1': undefined identifier
+port.h(7): error C202: 'P1': undefined identifier
+port.h(9): error C202: 'P1': undefined identifier
+port.h(10): error C202: 'P1': undefined identifier
+port.h(11): error C202: 'P1': undefined identifier
+port.h(12): error C202: 'P1': undefined identifier
+..\lib\KeyPad4x4.c(6): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(8): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(14): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(21): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(28): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling KeyPad4x4.c...
+port.h(4): error C202: 'P1': undefined identifier
+port.h(5): error C202: 'P1': undefined identifier
+port.h(6): error C202: 'P1': undefined identifier
+port.h(7): error C202: 'P1': undefined identifier
+port.h(9): error C202: 'P1': undefined identifier
+port.h(10): error C202: 'P1': undefined identifier
+port.h(11): error C202: 'P1': undefined identifier
+port.h(12): error C202: 'P1': undefined identifier
+..\lib\KeyPad4x4.c(6): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(8): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(14): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(21): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(28): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling KeyPad4x4.c...
+..\lib\KeyPad4x4.c(2): warning C318: can't open file 'mainh'
+port.h(4): error C202: 'P1': undefined identifier
+port.h(5): error C202: 'P1': undefined identifier
+port.h(6): error C202: 'P1': undefined identifier
+port.h(7): error C202: 'P1': undefined identifier
+port.h(9): error C202: 'P1': undefined identifier
+port.h(10): error C202: 'P1': undefined identifier
+port.h(11): error C202: 'P1': undefined identifier
+port.h(12): error C202: 'P1': undefined identifier
+..\lib\KeyPad4x4.c(7): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(13): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(20): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(27): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(34): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling KeyPad4x4.c...
+..\lib\KeyPad4x4.c(2): warning C318: can't open file 'mainh'
+port.h(4): error C202: 'P1': undefined identifier
+port.h(5): error C202: 'P1': undefined identifier
+port.h(6): error C202: 'P1': undefined identifier
+port.h(7): error C202: 'P1': undefined identifier
+port.h(9): error C202: 'P1': undefined identifier
+port.h(10): error C202: 'P1': undefined identifier
+port.h(11): error C202: 'P1': undefined identifier
+port.h(12): error C202: 'P1': undefined identifier
+..\lib\KeyPad4x4.c(7): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(13): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(20): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(27): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(34): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling KeyPad4x4.c...
+..\lib\KeyPad4x4.c(2): warning C318: can't open file 'mainh'
+port.h(4): error C202: 'P1': undefined identifier
+port.h(5): error C202: 'P1': undefined identifier
+port.h(6): error C202: 'P1': undefined identifier
+port.h(7): error C202: 'P1': undefined identifier
+port.h(9): error C202: 'P1': undefined identifier
+port.h(10): error C202: 'P1': undefined identifier
+port.h(11): error C202: 'P1': undefined identifier
+port.h(12): error C202: 'P1': undefined identifier
+..\lib\KeyPad4x4.c(7): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(9): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(10): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(11): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(12): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(13): error C202: 'COL1': undefined identifier
+..\lib\KeyPad4x4.c(15): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(16): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(17): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(18): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(19): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(20): error C202: 'COL2': undefined identifier
+..\lib\KeyPad4x4.c(22): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(23): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(24): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(25): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(26): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(27): error C202: 'COL3': undefined identifier
+..\lib\KeyPad4x4.c(29): error C202: 'COL4': undefined identifier
+..\lib\KeyPad4x4.c(30): error C202: 'ROW1': undefined identifier
+..\lib\KeyPad4x4.c(31): error C202: 'ROW2': undefined identifier
+..\lib\KeyPad4x4.c(32): error C202: 'ROW3': undefined identifier
+..\lib\KeyPad4x4.c(33): error C202: 'ROW4': undefined identifier
+..\lib\KeyPad4x4.c(34): error C202: 'COL4': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling KeyPad4x4.c...
+linking...
+Program Size: data=10.0 xdata=0 code=213
+creating hex file from "MaTranPhim"...
+"MaTranPhim" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=10.0 xdata=0 code=213
+creating hex file from "MaTranPhim"...
+"MaTranPhim" - 0 Error(s), 0 Warning(s).

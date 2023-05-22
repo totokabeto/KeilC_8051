@@ -1,0 +1,5 @@
+"main.obj",
+".\delay.obj",
+".\KeyPad4x4.obj" 
+TO "MaTranPhim" 
+RAMSIZE(256) 

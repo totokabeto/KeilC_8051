@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "GiaoTiepLCD16x2" 
+RAMSIZE(256) 

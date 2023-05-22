@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "ChopTat8LED" 
+RAMSIZE(256) 

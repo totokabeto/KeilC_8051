@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "ngatTimer0" 
+RAMSIZE(256) 

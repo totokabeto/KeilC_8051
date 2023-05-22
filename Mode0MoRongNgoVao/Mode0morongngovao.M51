@@ -1,0 +1,93 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/07/2023  10:50:00  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO Mode0morongngovao RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  Mode0morongngovao (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0021H     UNIT         ?PR?MAIN?MAIN
+            CODE    0821H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   Mode0morongngovao (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  Mode0morongngovao (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0090H.0       PUBLIC        P1_0
+  B:00B0H.2       PUBLIC        P3_2
+  B:0098H.0       PUBLIC        RI
+  C:0800H         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  B:0098H.7       PUBLIC        SM0
+  B:0098H.6       PUBLIC        SM1
+  B:0098H.4       PUBLIC        REN
+  -------         PROC          MAIN
+  -------         DO            
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/07/2023  10:50:00  PAGE 2
+
+
+  D:0007H         SYMBOL        b
+  -------         ENDDO         
+  C:0800H         LINE#         3
+  C:0800H         LINE#         5
+  C:0804H         LINE#         6
+  C:0806H         LINE#         7
+  C:0808H         LINE#         8
+  C:0808H         LINE#         9
+  C:080AH         LINE#         10
+  C:080CH         LINE#         12
+  C:080EH         LINE#         13
+  C:0811H         LINE#         14
+  C:0813H         LINE#         16
+  C:0817H         LINE#         18
+  C:0817H         LINE#         19
+  C:0819H         LINE#         20
+  C:0819H         LINE#         21
+  C:081DH         LINE#         22
+  C:081FH         LINE#         23
+  C:081FH         LINE#         25
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0021H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=48
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

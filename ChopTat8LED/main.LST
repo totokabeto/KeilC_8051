@@ -1,0 +1,33 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              03/07/2023 23:32:07 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h" 
+   2          #include "..\lib\delay.h"
+   3          #define LED_PORT P2
+   4          void main() {
+   5   1        LED_PORT = 0x55; 
+   6   1      while (1){
+   7   2        LED_PORT= ~LED_PORT; 
+   8   2        delay(500);
+   9   2        }
+  10   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     15    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

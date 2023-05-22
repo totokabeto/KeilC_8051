@@ -1,0 +1,58 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              04/07/2023 00:15:49 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h" 
+   2          #include "..\lib\delay.h"
+   3          #include "port.h" 
+   4          void main() {
+   5   1        IT1 = 1; 
+   6   1        EX1 = 1; 
+   7   1        EA= 1; // CHO PHEP NGAT TOAN CUC 
+   8   1        
+   9   1        LED0 = LED1 = LED2 = LED3 = 0; 
+  10   1        
+  11   1      while (1){
+  12   2        
+  13   2        PCON |= 0x01; 
+  14   2        }
+  15   1        }
+  16          void EX1_ISR (void) interrupt 2{
+  17   1      Delay_ms(20); 
+  18   1        if (!BTN0){
+  19   2      LED0 = !LED0; 
+  20   2          while (!BTN0);
+  21   2        }
+  22   1          if (!BTN1){
+  23   2      LED2 = !LED2; 
+  24   2          while (!BTN1);
+  25   2        }
+  26   1          if (!BTN2){
+  27   2      LED2 = !LED2; 
+  28   2          while (!BTN2);
+  29   2        }
+  30   1          if (!BTN3){
+  31   2      LED3 = !LED3; 
+  32   2          while (!BTN3);
+  33   2        }
+  34   1      
+  35   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    114    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

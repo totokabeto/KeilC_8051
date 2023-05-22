@@ -1,0 +1,93 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/07/2023  23:38:20  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\delay.obj TO ChopTat8LED RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  .\delay.obj (DELAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  ChopTat8LED (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0020H     UNIT         ?PR?_DELAY?DELAY
+            CODE    0820H     000FH     UNIT         ?PR?MAIN?MAIN
+            CODE    082FH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   ChopTat8LED (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?_DELAY?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  ChopTat8LED (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0820H         PUBLIC        main
+  -------         PROC          MAIN
+  C:0820H         LINE#         4
+  C:0820H         LINE#         5
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/07/2023  23:38:20  PAGE 2
+
+
+  C:0823H         LINE#         6
+  C:0823H         LINE#         7
+  C:0826H         LINE#         8
+  C:082DH         LINE#         9
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0800H         PUBLIC        _delay
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:0800H         LINE#         4
+  C:0800H         LINE#         6
+  C:080AH         LINE#         7
+  C:081FH         LINE#         8
+  -------         ENDPROC       _DELAY
+  -------         ENDMOD        DELAY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 002FH BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=62
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

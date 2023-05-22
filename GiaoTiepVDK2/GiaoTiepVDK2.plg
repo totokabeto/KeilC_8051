@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\KHANH\KeilC 8051 TUT\GiaoTiepVDK2\GiaoTiepVDK2.uvproj
+Project File Date:  04/09/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\UartMode1.h'
+main.c(6): warning C206: 'Uart_Init': missing function-prototype
+main.c(9): warning C206: 'Uart_Data_Ready': missing function-prototype
+main.c(10): warning C206: 'Uart_Read': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+Program Size: data=12.0 xdata=0 code=160
+creating hex file from "GiaoTiepVDK2"...
+"GiaoTiepVDK2" - 0 Error(s), 5 Warning(s).

@@ -1,0 +1,100 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/10/2023  00:27:14  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\delay.obj TO GiaoTiepLED7Doan RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  .\delay.obj (DELAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  GiaoTiepLED7Doan (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         _DATA_GROUP_
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     002FH     UNIT         ?PR?MAIN?MAIN
+            CODE    082FH     0020H     UNIT         ?PR?_DELAY?DELAY
+            CODE    084FH     000CH     UNIT         ?C_C51STARTUP
+            CODE    085BH     000AH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   GiaoTiepLED7Doan (MAIN)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  0008H    0002H
+  +--> ?CO?MAIN
+  +--> ?PR?_DELAY?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  GiaoTiepLED7Doan (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0800H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/10/2023  00:27:14  PAGE 2
+
+
+  C:085BH         PUBLIC        Code7Seg
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         4
+  C:0800H         LINE#         9
+  C:0800H         LINE#         10
+  C:0805H         LINE#         11
+  C:0815H         LINE#         12
+  C:081CH         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:082FH         PUBLIC        _delay
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:082FH         LINE#         4
+  C:082FH         LINE#         6
+  C:0839H         LINE#         7
+  C:084EH         LINE#         8
+  -------         ENDPROC       _DELAY
+  -------         ENDMOD        DELAY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0059H BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=104
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

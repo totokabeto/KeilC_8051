@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\KHANH\KeilC 8051 TUT\NgatTimer0\ngatTimer0.uvproj
+Project File Date:  04/10/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+linking...
+Program Size: data=9.0 xdata=0 code=17
+"ngatTimer0" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=0 code=17
+creating hex file from "ngatTimer0"...
+"ngatTimer0" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+main.c(20): error C202: 'TL': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+linking...
+Program Size: data=10.0 xdata=0 code=186
+creating hex file from "ngatTimer0"...
+"ngatTimer0" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=10.0 xdata=0 code=186
+creating hex file from "ngatTimer0"...
+"ngatTimer0" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+linking...
+Program Size: data=10.0 xdata=0 code=189
+creating hex file from "ngatTimer0"...
+"ngatTimer0" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+main.c(18): warning C206: 'Delay_ms': missing function-prototype
+main.c(18): error C267: 'Delay_ms': requires ANSI-style prototype
+main.c(19): error C141: syntax error near ';'
+main.c(19): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+main.c(18): warning C206: 'Delay_ms': missing function-prototype
+main.c(18): error C267: 'Delay_ms': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '..\delay.h'
+main.c(18): warning C206: 'Delay_ms': missing function-prototype
+main.c(18): error C267: 'Delay_ms': requires ANSI-style prototype
+compiling delay.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=0 code=255
+creating hex file from "ngatTimer0"...
+"ngatTimer0" - 0 Error(s), 0 Warning(s).

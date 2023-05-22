@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "QuetTu00_99" 
+RAMSIZE(256) 

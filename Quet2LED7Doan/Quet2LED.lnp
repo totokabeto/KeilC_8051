@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "Quet2LED" 
+RAMSIZE(256) 

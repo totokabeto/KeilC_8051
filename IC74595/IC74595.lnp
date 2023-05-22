@@ -1,0 +1,5 @@
+"main.obj",
+".\delay.obj",
+".\IE74595.obj" 
+TO "IC74595" 
+RAMSIZE(256) 

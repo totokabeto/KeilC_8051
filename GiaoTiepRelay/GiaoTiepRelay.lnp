@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "GiaoTiepRelay" 
+RAMSIZE(256) 

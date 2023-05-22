@@ -1,0 +1,61 @@
+C51 COMPILER V9.52.0.0   IE74595                                                           03/29/2023 00:32:14 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE IE74595
+OBJECT MODULE PLACED IN .\IE74595.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE ..\lib\IE74595.c BROWSE DEBUG OBJECTEXTEND PRINT(.\IE74595.lst) TABS(2) OBJ
+                    -ECT(.\IE74595.obj)
+
+line level    source
+
+   1          #include "main.h"
+   2          #include "IE74595.h" 
+   3          #include "port.h"
+   4          
+   5          void IE74595_Out_Byte(unsigned char b){
+   6   1      unsigned char i; 
+   7   1        for (i = 0; i < 8; i++){
+   8   2        IE74595_DS = b & (0x80>>i); // lay tung bit cua byte b gui ra DS, lay bit MSB truoc 
+   9   2        // tao xung dich du lieu 
+  10   2        IE74595_SHCP = 0; 
+  11   2        IE74595_SHCP = 1; 
+  12   2      }
+  13   1      // tao xung xuat du lieu 
+  14   1      // tao mot byte xong roi moi xuat chan du lieu 
+  15   1      IE74595_STCP = 0; 
+  16   1      IE74595_STCP = 1;
+  17   1      
+  18   1      }
+  19          
+  20          void IE74595_Out(unsigned char *p, unsigned char n){
+  21   1      unsigned char i,b,j; 
+  22   1        for ( j = 0; j < n; j++){
+  23   2        b = *(p+n-j-1); // lay bit cao nhat truoc 
+  24   2      
+  25   2        for (i = 0; i < 8; i++){
+  26   3        IE74595_DS = b & (0x80>>i); // lay tung bit cua byte b gui ra DS, lay bit MSB truoc 
+  27   3        // tao xung dich du lieu 
+  28   3        IE74595_SHCP = 0; 
+  29   3        IE74595_SHCP = 1; 
+  30   3      }
+  31   2      }
+  32   1      // tao xung xuat du lieu 
+  33   1      // tao mot byte xong roi moi xuat chan du lieu 
+  34   1      IE74595_STCP = 0; 
+  35   1      IE74595_STCP = 1;
+  36   1      
+  37   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    139    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       5
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
