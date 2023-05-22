@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"main.obj" 
+TO "flashled" 
+RAMSIZE(256) 
